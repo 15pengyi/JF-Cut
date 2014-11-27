@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QWidget objectName="tabView" toolTip="View">
+ <doubleSpinBoxTranslationX>0</doubleSpinBoxTranslationX>
+ <doubleSpinBoxTranslationZ>-2.8</doubleSpinBoxTranslationZ>
+ <doubleSpinBoxTranslationY>0</doubleSpinBoxTranslationY>
+ <doubleSpinBoxRotationX>1</doubleSpinBoxRotationX>
+ <doubleSpinBoxRotationY>0</doubleSpinBoxRotationY>
+ <doubleSpinBoxRotationW>0</doubleSpinBoxRotationW>
+ <doubleSpinBoxRotationZ>0</doubleSpinBoxRotationZ>
+ <spinBoxViewSizeY>989</spinBoxViewSizeY>
+ <spinBoxViewSizeX>756</spinBoxViewSizeX>
+</QWidget>

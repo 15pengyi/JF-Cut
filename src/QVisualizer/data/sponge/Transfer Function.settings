@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QHoverPoints>
+ <QPolygonF Size="2" ConnectionType="0">
+  <QPointF X="0" G="170" Y="0" R="0" B="255"/>
+  <QPointF X="1" G="255" Y="0" R="255" B="255"/>
+ </QPolygonF>
+</QHoverPoints>

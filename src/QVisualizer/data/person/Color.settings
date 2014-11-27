@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QWidget objectName="tabColor" toolTip="Color">
+ <spinBoxColorFore>63</spinBoxColorFore>
+ <pushButtonColorFore styleSheet="border-radius: 12px; background-color: rgba(255, 127, 127, 127);">255, 127, 127</pushButtonColorFore>
+ <spinBoxColorBack>63</spinBoxColorBack>
+ <pushButtonColorBack styleSheet="border-radius: 12px; background-color: rgba(127, 255, 127, 127);">127, 255, 127</pushButtonColorBack>
+ <spinBoxColorCut>0</spinBoxColorCut>
+ <pushButtonColorCut styleSheet="border-radius: 12px; background-color: rgba(127, 127, 225, 127);">127, 127, 225</pushButtonColorCut>
+ <spinBoxColorTag>0</spinBoxColorTag>
+ <pushButtonColorTag styleSheet="border-radius: 12px; background-color: rgba(255, 127, 225, 127);">255, 127, 225</pushButtonColorTag>
+</QWidget>

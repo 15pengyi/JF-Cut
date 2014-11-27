@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QWidget objectName="tabModeling" toolTip="Modeling">
+ <radioButtonBK>0</radioButtonBK>
+ <radioButtonLazySnapping>1</radioButtonLazySnapping>
+ <spinBoxKMeansIterations>64</spinBoxKMeansIterations>
+ <spinBoxK>6</spinBoxK>
+ <doubleSpinBoxLazyTerminal>0.25</doubleSpinBoxLazyTerminal>
+ <doubleSpinBoxLazyNeighbor>1</doubleSpinBoxLazyNeighbor>
+ <doubleSpinBoxBKTerminal>0</doubleSpinBoxBKTerminal>
+ <doubleSpinBoxBKNeighbor>0.025</doubleSpinBoxBKNeighbor>
+</QWidget>

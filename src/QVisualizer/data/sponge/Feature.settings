@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QWidget objectName="tabFeature" toolTip="Feature">
+ <doubleSpinBoxWeightX>1</doubleSpinBoxWeightX>
+ <doubleSpinBoxWeightY>1</doubleSpinBoxWeightY>
+ <doubleSpinBoxWeightW>0</doubleSpinBoxWeightW>
+ <doubleSpinBoxWeightZ>1</doubleSpinBoxWeightZ>
+</QWidget>

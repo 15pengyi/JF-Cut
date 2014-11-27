@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QWidget objectName="tabProjection" toolTip="Projection">
+ <radioButtonPerspective>0</radioButtonPerspective>
+ <radioButtonOrthogonal>1</radioButtonOrthogonal>
+ <doubleSpinBoxZNear>0.1</doubleSpinBoxZNear>
+ <doubleSpinBoxZFar>10000</doubleSpinBoxZFar>
+ <spinBoxFOVY>60</spinBoxFOVY>
+ <spinBoxOrthogonal>100</spinBoxOrthogonal>
+</QWidget>

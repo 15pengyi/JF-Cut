@@ -54,6 +54,7 @@ std::string QGCSetting::extMFI = ".mfi";
 std::string QGCSetting::extNode = ".node";
 std::string QGCSetting::extGradient = ".gradient";
 std::string QGCSetting::extCurvature = ".curvature";
+std::string QGCSetting::extGray = ".gray";
 std::string QGCSetting::extColor = ".color";
 
 glm::ivec4 QGCSetting::cl_shift_2d = glm::ivec4(0, 15,  0, (1 << 15) - 1);

@@ -75,7 +75,7 @@ public:
     static std::string extExcessFlow, extCapacity1, extCapacity2;
     static std::string extMFI;
     static std::string extGradient, extCurvature;
-    static std::string extColor;
+    static std::string extGray, extColor;
 
     static float filterGaussian0[5];
     static float filterGaussian1[5];

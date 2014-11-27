@@ -17,6 +17,7 @@
 #include <limits>
 
 #include "../infrastructures/QHoverPoints.h"
+#include "../Graph Cut/QGCSetting.h"
 #include "QIO.h"
 #include "QUtilityMath.h"
 #include "QUtilityData.h"
@@ -188,7 +189,7 @@ void QUtilityData::saveGrayImage(const std::string& fileName, const glm::uvec2& 
         for (int x = 0; x < width; x++)
             *(ptrDestination++) = qGray(source.pixel(x, y));
 
-    QIO::saveFileData(fileName + ".gray", destination.data(), destination.size() * sizeof(cl_uchar));
+    QIO::saveFileData(fileName + QGCSetting::extGray, destination.data(), destination.size() * sizeof(cl_uchar));
 }
 
 void QUtilityData::saveColorImage(const std::string& fileName, const glm::uvec2& scale)
@@ -211,7 +212,7 @@ void QUtilityData::saveColorImage(const std::string& fileName, const glm::uvec2&
             ptrDestination++;
         };
 
-    QIO::saveFileData(fileName + ".color", destination.data(), destination.size() * sizeof(cl_uchar4));
+    QIO::saveFileData(fileName + QGCSetting::extColor, destination.data(), destination.size() * sizeof(cl_uchar4));
 }
 
 void QUtilityData::saveImageLabels(const std::string& fileName)

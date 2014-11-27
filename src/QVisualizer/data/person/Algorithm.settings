@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QWidget objectName="tabAlgorithm" toolTip="Algorithm">
+ <radioButtonGlobalRelabel>0</radioButtonGlobalRelabel>
+ <radioButtonNone>1</radioButtonNone>
+ <radioButtonJumpFlooding>0</radioButtonJumpFlooding>
+ <radioButtonCutMethodFastCut>0</radioButtonCutMethodFastCut>
+ <radioButtonCutMethodJFCut>1</radioButtonCutMethodJFCut>
+ <spinBoxTile2DY>16</spinBoxTile2DY>
+ <spinBoxTile2DX>16</spinBoxTile2DX>
+ <spinBoxTile3DY>0</spinBoxTile3DY>
+ <spinBoxTile3DZ>0</spinBoxTile3DZ>
+ <spinBoxTile3DX>0</spinBoxTile3DX>
+</QWidget>

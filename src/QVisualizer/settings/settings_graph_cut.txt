@@ -1,0 +1,15 @@
+Dataset: ./data/flower/normalized_flower.raw.dat
+Corporation: NVIDIA
+Source:
+
+1) Images
+T:/Segmentation Data/Images/original/flower/normalized_flower.raw.dat
+T:/Segmentation Data/Images/others/Madagascar/normalized_CT0072 Madagascar Cartoon Characters .bmp.raw.dat
+
+2) Videos
+T:/Segmentation Data/Videos/Life of Pi/normalized_volume.raw.dat
+T:/Segmentation Data/Videos/TimeScapes/normalized_volume.raw.dat
+
+3) Volumes
+T:/Segmentation Data/Volumes/original/bone/normalized_bone.raw.dat
+T:/Segmentation Data/Volumes/others/MRbrain/normalized_MRbrain.raw.dat

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QWidget objectName="tabRayCasting" toolTip="Ray Casting">
+ <radioButtonNormal>0</radioButtonNormal>
+ <radioButtonPreIntegration>0</radioButtonPreIntegration>
+ <radioButtonFeature>1</radioButtonFeature>
+ <radioButtonRayCastingObjectAll>1</radioButtonRayCastingObjectAll>
+ <radioButtonRayCastingObjectFore>0</radioButtonRayCastingObjectFore>
+ <radioButtonRayCastingObjectBack>0</radioButtonRayCastingObjectBack>
+ <radioButtonRayCastingObjectTag>0</radioButtonRayCastingObjectTag>
+ <radioButtonRayCastingObjectCut>0</radioButtonRayCastingObjectCut>
+ <spinBoxSampleScale>4096</spinBoxSampleScale>
+ <doubleSpinBoxSampleRatio>1</doubleSpinBoxSampleRatio>
+ <spinBoxSampleNumber>256</spinBoxSampleNumber>
+</QWidget>

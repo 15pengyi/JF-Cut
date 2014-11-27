@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QWidget objectName="tabBrushing" toolTip="Brushing">
+ <spinBoxOpacity>0</spinBoxOpacity>
+ <spinBoxSize>60</spinBoxSize>
+ <radioButtonShapeSquare>0</radioButtonShapeSquare>
+ <radioButtonShapeCross>0</radioButtonShapeCross>
+ <radioButtonShapeCircle>1</radioButtonShapeCircle>
+</QWidget>

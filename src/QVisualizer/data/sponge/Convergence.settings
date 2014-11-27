@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QWidget objectName="tabConvergence" toolTip="Convergence">
+ <checkBoxPrint>0</checkBoxPrint>
+ <checkBoxEnergy>1</checkBoxEnergy>
+ <checkBoxComputeTag>0</checkBoxComputeTag>
+ <spinBoxCountIterations>1</spinBoxCountIterations>
+ <spinBoxCutIterations>14</spinBoxCutIterations>
+ <spinBoxTotalIterations>256</spinBoxTotalIterations>
+ <spinBoxPrintIterations>8</spinBoxPrintIterations>
+</QWidget>
