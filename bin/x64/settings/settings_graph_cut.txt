@@ -1,0 +1,73 @@
+Dataset: T:/Segmentation Data/Volumes/others/liuge/normalized_simplified_liu ge 24 f_62729_1_3.raw.dat
+Corporation: AMD
+Datasource:
+
+0) info
+NVIDIA
+AMD
+
+1) original
+T:/Segmentation Data/Images/original/flower/normalized_flower.raw.dat
+T:/Segmentation Data/Images/original/person/normalized_person.raw.dat
+T:/Segmentation Data/Images/original/sponge/normalized_sponge.raw.dat
+
+T:/Segmentation Data/Volumes/original/babyface/normalized_babyface.raw.dat
+T:/Segmentation Data/Volumes/original/adhead/normalized_adhead.raw.dat
+T:/Segmentation Data/Volumes/original/bone/normalized_bone.raw.dat
+T:/Segmentation Data/Volumes/original/liver/normalized_liver.raw.dat
+
+2) scaled
+T:/Segmentation Data/Images/scaled/flower/normalized_flower.raw.dat
+T:/Segmentation Data/Images/scaled/person/normalized_person.raw.dat
+T:/Segmentation Data/Images/scaled/sponge/normalized_sponge.raw.dat
+
+T:/Segmentation Data/Volumes/scaled/babyface/normalized_babyface.raw.dat
+T:/Segmentation Data/Volumes/scaled/adhead/normalized_adhead.raw.dat
+T:/Segmentation Data/Volumes/scaled/bone/normalized_bone.raw.dat
+T:/Segmentation Data/Volumes/scaled/liver/normalized_liver.raw.dat
+
+3) scaled - 2
+T:/Segmentation Data/Images/scaled-2/flower/normalized_flower.raw.dat
+T:/Segmentation Data/Images/scaled-2/person/normalized_person.raw.dat
+T:/Segmentation Data/Images/scaled-2/sponge/normalized_sponge.raw.dat
+
+*) examples
+
+# VOLUMES
+T:/Segmentation Data/Volumes/others/MRbrain/normalized_MRbrain.raw.dat
+T:/Segmentation Data/Volumes/others/BigBrain/normalized_volume.simplified.raw.dat
+T:/Segmentation Data/Volumes/others/Lobster/normalized_lobster.raw.dat
+T:/Segmentation Data/Volumes/others/liuge/normalized_simplified_liu he 24 f_62729_1_3.raw.dat
+
+# IMAGES
+T:/Segmentation Data/Images/others/People/bmp/A1posterLTA/normalized_A1posterLTA.bmp.raw.dat
+T:/Segmentation Data/Images/others/Apollo 1 Astronauts/normalized_GPN-2000-000618.raw.dat
+T:/Segmentation Data/Images/others/NF-15B/normalized_308266main_ED07-0026-04_full.raw.dat
+
+# VIDEO
+T:/Segmentation Data/Videos/Thunk/normalized_simplified_Backstage.raw.dat
+T:/Segmentation Data/Videos/Belt/normalized_Belt.raw.dat
+
+# Volvis
+T:/VolVis/Head/normalized_head.raw.dat
+T:/VolVis/Lobster/normalized_lobster.raw.dat
+T:/VolVis/Stented Abdominal Aorta/16Bits/stent16_ao.dat
+T:/VolVis/Aneurism/aneurism.dat
+
+# Others
+T:/Raw Data/head/head.dat
+T:/Raw Data/head/normalized_head.raw.dat
+
+T:/Raw Data/foot/foot.dat
+T:/Raw Data/foot/normalized_foot.raw.dat
+
+T:/Raw Data/engine/engine.dat
+T:/Raw Data/engine/normalized_engine.raw.dat
+
+T:/Raw Data/DICOM/SRS00003.dat
+T:/Raw Data/DICOM/normalized_SRS00003.raw.dat
+
+T:/Raw Data/DICOM/VIX/VIX_Pied_cheville_UHR_Pied_cheville.dat
+T:/Raw Data/DICOM/VIX/normalized_VIX_Pied_cheville_UHR_Pied_cheville.raw.dat
+
+T:/Raw Data/DICOM/AMNESIX_Post_Stent_AngioRunOff_B30f.dat
