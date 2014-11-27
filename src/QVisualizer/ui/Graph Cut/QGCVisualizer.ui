@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QVisualizerClass</class>
+ <widget class="QMainWindow" name="QVisualizerClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>QVisualizer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <action name="actionVector_Field_Visualization">
+   <property name="text">
+    <string>Vector Field Visualization</string>
+   </property>
+  </action>
+  <action name="actionMarching_Cubes">
+   <property name="text">
+    <string>Marching Cubes</string>
+   </property>
+  </action>
+  <action name="actionVolume_Rendering">
+   <property name="text">
+    <string>Volume Rendering</string>
+   </property>
+  </action>
+  <action name="actionTensor_Field_Visualization">
+   <property name="text">
+    <string>Tensor Field Visualization</string>
+   </property>
+  </action>
+  <action name="actionVirtual_Environment_For_Visualization">
+   <property name="text">
+    <string>Virtual Environment For Visualization</string>
+   </property>
+  </action>
+  <action name="actionLarge_Scale_Data_Visualization">
+   <property name="text">
+    <string>Large-Scale Data Visualization</string>
+   </property>
+  </action>
+  <action name="actionVisualization_Software_and_Frameworks">
+   <property name="text">
+    <string>Visualization Software and Frameworks</string>
+   </property>
+  </action>
+  <action name="actionPerceptual_Issues_in_Visualization">
+   <property name="text">
+    <string>Perceptual Issues in Visualization</string>
+   </property>
+  </action>
+  <action name="actionSelected_Topics_and_QApplications">
+   <property name="text">
+    <string>Selected Topics and QApplications</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{db706819-c5e4-4675-b840-040cd3d17ce7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Templates">
+      <UniqueIdentifier>{f7751b4d-d3fc-4ee7-b2f1-32e5df195a98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Templates">
+      <UniqueIdentifier>{0de7e85d-70df-4cfb-b584-a9fb97d515c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Infrastructures">
+      <UniqueIdentifier>{28955cee-53c2-4563-82f7-84cfce432195}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Infrastructures">
+      <UniqueIdentifier>{9f620974-2b89-4cad-8aa4-c6547099f259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utilities">
+      <UniqueIdentifier>{1342aea8-1f92-4c3f-953b-8832f929facc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenCL Files">
+      <UniqueIdentifier>{932bfaaa-ee16-495d-971f-30446d56ec64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Debug_Win32">
+      <UniqueIdentifier>{240d0e91-a38f-4628-ad85-6ec3af54bbdf}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug_x64">
+      <UniqueIdentifier>{5c7b0b81-8d82-4023-bff5-5b1d556fcaeb}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release_Win32">
+      <UniqueIdentifier>{519faa36-47fa-4401-bd92-aef4b199f48c}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release_x64">
+      <UniqueIdentifier>{573639a0-9f62-4db9-904d-3c7f3565a465}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Source Files\GraphCut">
+      <UniqueIdentifier>{a2764bc2-d9c7-461c-99e8-da77b07c6235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenCL Files\GraphCut">
+      <UniqueIdentifier>{64078425-cc7f-4a73-a2f2-3b8b41687a83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GraphCut">
+      <UniqueIdentifier>{285f4815-ba71-4ff8-8e01-e0b2631e0208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\GraphCut">
+      <UniqueIdentifier>{4aab26b9-98e4-42e3-8c13-30cbcf2e3e84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenCL Files\GraphCut\Computing">
+      <UniqueIdentifier>{ae7e3e28-19c8-401b-8c06-1feeffb67b77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenCL Files\GraphCut\Rendering">
+      <UniqueIdentifier>{0de722ba-4ade-421f-89c8-05b971481d9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenCL Files\GraphCut\Push-Relabel">
+      <UniqueIdentifier>{a4e59156-614c-48d9-a60d-bb4a694dfe4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenCL Files\GraphCut\Count">
+      <UniqueIdentifier>{764a0cab-ccdb-41ab-911d-da3fde375101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenCL Files\GraphCut\Clustering">
+      <UniqueIdentifier>{35a72647-3311-48fc-85bc-5f9166cd0af2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenCL Files\GraphCut\Initialization">
+      <UniqueIdentifier>{e94c7579-45fc-435d-9c87-a532dcee32e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdParty">
+      <UniqueIdentifier>{b4a94af5-7ccc-4e6f-904b-259ae7310f83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdParty\stacktrace">
+      <UniqueIdentifier>{a4a5bf37-bb45-4bac-9acf-8ff5e271a827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdParty\cl">
+      <UniqueIdentifier>{a6130d04-a7b9-4c0e-be06-ceec66ae908f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdParty\Infrastructures">
+      <UniqueIdentifier>{4c5ba060-31e1-43dd-96e2-acba830049d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdParty\bench">
+      <UniqueIdentifier>{ccc18b9e-cd72-4d4e-972e-6377e157e743}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="infrastructures\QHoverPoints.cpp">
+      <Filter>Source Files\Infrastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\QIO.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="templates\QCommon.cpp">
+      <Filter>Source Files\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="infrastructures\QTransferFunction1D.cpp">
+      <Filter>Source Files\Infrastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="infrastructures\QSetting.cpp">
+      <Filter>Source Files\Infrastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph Cut\QGCPanel.cpp">
+      <Filter>Source Files\GraphCut</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph Cut\QGCSetting.cpp">
+      <Filter>Source Files\GraphCut</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph Cut\QGCVisualizer.cpp">
+      <Filter>Source Files\GraphCut</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph Cut\QGCWidget.cpp">
+      <Filter>Source Files\GraphCut</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\Win32\moc_QGCPanel.cpp">
+      <Filter>Generated Files\Debug_Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\x64\moc_QGCPanel.cpp">
+      <Filter>Generated Files\Debug_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\Win32\moc_QGCPanel.cpp">
+      <Filter>Generated Files\Release_Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\x64\moc_QGCPanel.cpp">
+      <Filter>Generated Files\Release_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\Win32\moc_QGCVisualizer.cpp">
+      <Filter>Generated Files\Debug_Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\x64\moc_QGCVisualizer.cpp">
+      <Filter>Generated Files\Debug_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\Win32\moc_QGCVisualizer.cpp">
+      <Filter>Generated Files\Release_Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\x64\moc_QGCVisualizer.cpp">
+      <Filter>Generated Files\Release_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\Win32\moc_QGCWidget.cpp">
+      <Filter>Generated Files\Debug_Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\x64\moc_QGCWidget.cpp">
+      <Filter>Generated Files\Debug_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\Win32\moc_QGCWidget.cpp">
+      <Filter>Generated Files\Release_Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\x64\moc_QGCWidget.cpp">
+      <Filter>Generated Files\Release_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\Win32\moc_QTransferFunction1D.cpp">
+      <Filter>Generated Files\Debug_Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\x64\moc_QTransferFunction1D.cpp">
+      <Filter>Generated Files\Debug_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\Win32\moc_QTransferFunction1D.cpp">
+      <Filter>Generated Files\Release_Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\x64\moc_QTransferFunction1D.cpp">
+      <Filter>Generated Files\Release_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="infrastructures\QProfile.cpp">
+      <Filter>Source Files\Infrastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\Win32\moc_QProfile.cpp">
+      <Filter>Generated Files\Debug_Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\x64\moc_QProfile.cpp">
+      <Filter>Generated Files\Debug_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\Win32\moc_QProfile.cpp">
+      <Filter>Generated Files\Release_Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\x64\moc_QProfile.cpp">
+      <Filter>Generated Files\Release_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\QUtilityUI.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\QUtilityData.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\QUtilityCL.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\QUtilityGL.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\QUtilityMath.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\QUtilityConsole.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\Win32\moc_QHoverPoints.cpp">
+      <Filter>Generated Files\Debug_Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\x64\moc_QHoverPoints.cpp">
+      <Filter>Generated Files\Debug_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\Win32\moc_QHoverPoints.cpp">
+      <Filter>Generated Files\Release_Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\x64\moc_QHoverPoints.cpp">
+      <Filter>Generated Files\Release_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\Win32\moc_QCommon.cpp">
+      <Filter>Generated Files\Debug_Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\x64\moc_QCommon.cpp">
+      <Filter>Generated Files\Debug_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\Win32\moc_QCommon.cpp">
+      <Filter>Generated Files\Release_Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\x64\moc_QCommon.cpp">
+      <Filter>Generated Files\Release_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdParty\stacktrace\call_stack_gcc.hpp">
+      <Filter>3rdParty\stacktrace</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdParty\stacktrace\StackWalker.hpp">
+      <Filter>3rdParty\stacktrace</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph Cut\QGCMain.cpp">
+      <Filter>Source Files\GraphCut</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdParty\bench\mfi.cpp">
+      <Filter>3rdParty\bench</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ui\Graph Cut\QGCPanel.ui">
+      <Filter>Form Files\GraphCut</Filter>
+    </CustomBuild>
+    <CustomBuild Include="infrastructures\QHoverPoints.h">
+      <Filter>Header Files\Infrastructures</Filter>
+    </CustomBuild>
+    <CustomBuild Include="templates\QCommon.h">
+      <Filter>Header Files\Templates</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Graph Cut\QGCPanel.h">
+      <Filter>Header Files\GraphCut</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Graph Cut\QGCVisualizer.h">
+      <Filter>Header Files\GraphCut</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Graph Cut\QGCWidget.h">
+      <Filter>Header Files\GraphCut</Filter>
+    </CustomBuild>
+    <CustomBuild Include="infrastructures\QTransferFunction1D.h">
+      <Filter>Header Files\Infrastructures</Filter>
+    </CustomBuild>
+    <CustomBuild Include="infrastructures\QProfile.h">
+      <Filter>Header Files\Infrastructures</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\Graph Cut\QGCVisualizer.ui">
+      <Filter>Form Files\GraphCut</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_QGCPanel.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="infrastructures\QSetting.h">
+      <Filter>Header Files\Infrastructures</Filter>
+    </ClInclude>
+    <ClInclude Include="infrastructures\QStructure.h">
+      <Filter>Header Files\Infrastructures</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\QIO.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph Cut\QGCSetting.h">
+      <Filter>Header Files\GraphCut</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\QUtilityUI.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\QUtilityData.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\QUtilityGL.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\QUtilityCL.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\QUtilityMath.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdParty\stacktrace\StackWalker.h">
+      <Filter>3rdParty\stacktrace</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdParty\stacktrace\call_stack_msvc.hpp">
+      <Filter>3rdParty\stacktrace</Filter>
+    </ClInclude>
+    <ClInclude Include="infrastructures\QError.h">
+      <Filter>Header Files\Infrastructures</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QGCVisualizer.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdParty\cl\cl_stacktrace.hpp">
+      <Filter>3rdParty\cl</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdParty\bench\mfi.h">
+      <Filter>3rdParty\bench</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cl\GraphCut\graphcut_compute_capacity.cl">
+      <Filter>OpenCL Files\GraphCut\Computing</Filter>
+    </None>
+    <None Include="cl\GraphCut\graphcut_compute_excessflow.cl">
+      <Filter>OpenCL Files\GraphCut\Computing</Filter>
+    </None>
+    <None Include="cl\GraphCut\graphcut_render_ray_casting.cl">
+      <Filter>OpenCL Files\GraphCut\Rendering</Filter>
+    </None>
+    <None Include="cl\GraphCut\graphcut_compute_cut.cl">
+      <Filter>OpenCL Files\GraphCut\Computing</Filter>
+    </None>
+    <None Include="cl\GraphCut\graphcut_push_relabel.cl">
+      <Filter>OpenCL Files\GraphCut\Push-Relabel</Filter>
+    </None>
+    <None Include="cl\GraphCut\graphcut_global_relabel.cl">
+      <Filter>OpenCL Files\GraphCut\Initialization</Filter>
+    </None>
+    <None Include="cl\GraphCut\graphcut_kmeans.cl">
+      <Filter>OpenCL Files\GraphCut\Clustering</Filter>
+    </None>
+    <None Include="cl\GraphCut\graphcut_render_ray_casting_preint.cl">
+      <Filter>OpenCL Files\GraphCut\Rendering</Filter>
+    </None>
+    <None Include="cl\GraphCut\graphcut_render_ray_casting_feature.cl">
+      <Filter>OpenCL Files\GraphCut\Rendering</Filter>
+    </None>
+    <None Include="cl\GraphCut\graphcut_compute_tag.cl">
+      <Filter>OpenCL Files\GraphCut\Computing</Filter>
+    </None>
+    <None Include="cl\GraphCut\graphcut_push_relabel_fast.cl">
+      <Filter>OpenCL Files\GraphCut\Push-Relabel</Filter>
+    </None>
+    <None Include="cl\Infrastructures\reduce.cl">
+      <Filter>3rdParty\Infrastructures</Filter>
+    </None>
+    <None Include="cl\GraphCut\graphcut_count_block.cl">
+      <Filter>OpenCL Files\GraphCut\Count</Filter>
+    </None>
+    <None Include="cl\Infrastructures\integration.cl">
+      <Filter>3rdParty\Infrastructures</Filter>
+    </None>
+    <None Include="cl\Infrastructures\initialization.cl">
+      <Filter>3rdParty\Infrastructures</Filter>
+    </None>
+    <None Include="cl\GraphCut\graphcut_histogram.cl">
+      <Filter>OpenCL Files\GraphCut\Clustering</Filter>
+    </None>
+    <None Include="cl\GraphCut\graphcut_bfs_block.cl">
+      <Filter>OpenCL Files\GraphCut\Count</Filter>
+    </None>
+  </ItemGroup>
+</Project>
