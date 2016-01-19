@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="mfi.cpp" />
+    <ClCompile Include="timer.cpp" />
+    <ClCompile Include="QIO.cpp" />
+    <ClCompile Include="bench-BK303.cpp" />
+    <ClCompile Include="code\BK303\graph.cpp" />
+    <ClCompile Include="code\BK303\maxflow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mfi.h" />
+    <ClInclude Include="timer.h" />
+    <ClInclude Include="QIO.h" />
+    <ClInclude Include="code\BK303\graph.h" />
+    <ClInclude Include="code\BK303\block.h" />
+    <ClInclude Include="code\BK303\instances.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,40 @@
+
+%-------------------------------------------------------------------------
+\section{Introduction}
+\label{section introduction}
+
+\IEEEPARstart{G}raph Cut can be employed to efficiently solve a wide variety of graphics and computer vision problems, such as segmentation, shape fitting, colorization, multi-view reconstruction, and many other problems that can be formulated to maximum flow problems \cite{12JSH}.
+
+In image segmentation, graph cut is advantageous compared with other energy optimization methods due to its high accuracy and high efficiency.
+By leveraging incremental or multi-level schemes \cite{04LSTS, 05LSGX}, the complexity of user interactions can be greatly reduced.
+However, the high computational complexity limits its usage on high-definition images and videos, especially for real time interactions.
+Parallelization is an appropriate way to handle this, which motivates our work.
+
+The basic idea of graph cut is to partition the elements into two disjoint subsets by finding the minimum cut using maximum flow algorithms. Existing graph cut methods can be classified into two categories: augmented path based methods that are solely workable in CPU \cite{04BK, 10LS, 12JSH}; push-relabel based that can be accelerated with GPU \cite{08VN, 11W}.
+The former normally requires a global data structure, like priority queue and dynamic trees \cite{70D}, and thus is intractable for parallelization and handling large-scale data set.
+In contrast, using the push-relabel scheme is compatible with parallelization, but may lead to slow convergence speed, or yield non-global optimal results.
+It is also inefficient in tackling large-scale data sets.
+
+Early work on image graph cut, such as lazy snapping \cite{04LSTS} and grabcut \cite{04RKB} perform pre-segmentation to reduce the data scale.
+Analogously, video-cutout \cite{05WBCAC} introduces a hierarchical mean-shift based preprocess to support interactive segmentation, and volume-cutout \cite{05YZNC} takes a watershed over-segmentation.
+All of them require a time-consuming preprocessing and may lead to approximated results.
+
+Most of the methods use stroke-based interactions to help users specify foreground and background elements.
+However, for videos and volumetric data, it is hard to directly select the data due to perspective projection and occlusion.
+A more common way to do data selection is to mark frame by frame which is intuitive and tedious.
+
+This paper introduces a parallel graph cut approach that is capable of handling large-scale image and video with fast convergence speed.
+The key idea is to accelerate the propagation of flow in the graph.
+More importantly, the entire process is parallelizable, making it an ideal solution for large-scale data sets.
+Compared with conventional graph-cut implementations \cite{04BK, 11W, 12JSH}, our method achieves a maximum 40-fold (139-fold for CPU) speedup.
+In summary, the main contributions of this paper are twofold:
+
+\begin{enumerate}
+\item A GPU-based graph cut scheme that combines jump flooding, heuristic push-relabel and convergence detection to achieve high performance and quality;
+\item An interactive graph cut based data segmentation system that allows for intuitive data selection, interaction and segmentation for large-scale image and video.
+\end{enumerate}
+
+In the remainder of this paper, we first take a brief review of the literature in Section \ref{section related work}.
+Our approach is elaborately introduced in Section \ref{section jfcut}, followed by the design of user interactions in Section \ref{section user interaction}.
+Experimental results and comparison are presented in Section \ref{section results}.
+Section \ref{section discussions} concludes our approach and highlights the future work.

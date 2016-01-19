@@ -1,0 +1,571 @@
+I. TITAN
+
+1. E:/Jackie/Segmentation Data/Images/others/Poster1/normalized_CT0072 Madagascar Cartoon Characters .bmp.raw.dat
+
+JF-Cut
+
+ > FLOW: computeCurrentFlow() - 64 - 13277527664
+ > FLOW: computeCurrentFlow() - 128 - 13472908224
+ > FLOW: computeCurrentFlow() - 192 - 13511109996
+ > FLOW: computeCurrentFlow() - 256 - 13525173871
+ > FLOW: computeCurrentFlow() - 320 - 13532812471
+ > FLOW: computeCurrentFlow() - 384 - 13535312079
+ > FLOW: computeCurrentFlow() - 448 - 13536122731
+ > FLOW: computeCurrentFlow() - 512 - 13536277228
+ > FLOW: computeCurrentFlow() - 576 - 13536340184
+ > FLOW: computeCurrentFlow() - 640 - 13536344426
+ > LOG: graphCut() total -  25721 ms.
+ > ENERGY: graphCut() data - 4283066327, smooth - 663343507
+ > GPU TIME: graphCut() push / relabel - 24465.44074, cut - 501.75757
+ > GPU TIME: graphCut() init - 67.65091, count - 381.62669, flow - 18.54595
+ > DATA: graphCut() itrs - 640
+
+Fast-Cut
+
+ > FLOW: computeCurrentFlow() - 64 - 11583609515
+ > FLOW: computeCurrentFlow() - 128 - 12910307216
+ > FLOW: computeCurrentFlow() - 192 - 13265063745
+ > FLOW: computeCurrentFlow() - 256 - 13397680147
+ > FLOW: computeCurrentFlow() - 320 - 13454814890
+ > FLOW: computeCurrentFlow() - 384 - 13482640346
+ > FLOW: computeCurrentFlow() - 448 - 13498908979
+ > FLOW: computeCurrentFlow() - 512 - 13509229360
+ > FLOW: computeCurrentFlow() - 576 - 13514835520
+ > FLOW: computeCurrentFlow() - 640 - 13520608940
+ > FLOW: computeCurrentFlow() - 704 - 13525410290
+ > FLOW: computeCurrentFlow() - 768 - 13530100222
+ > FLOW: computeCurrentFlow() - 832 - 13532870125
+ > FLOW: computeCurrentFlow() - 896 - 13534232763
+ > FLOW: computeCurrentFlow() - 960 - 13535075247
+ > FLOW: computeCurrentFlow() - 1024 - 13535531593
+ > FLOW: computeCurrentFlow() - 1088 - 13535765389
+ > FLOW: computeCurrentFlow() - 1152 - 13536029156
+ > FLOW: computeCurrentFlow() - 1216 - 13536222011
+ > FLOW: computeCurrentFlow() - 1280 - 13536302786
+ > FLOW: computeCurrentFlow() - 1344 - 13536344426
+ > LOG: graphCut() total -  52487 ms.
+ > ENERGY: graphCut() data - 4283066327, smooth - 663343507
+ > GPU TIME: graphCut() push / relabel - 49559.94109, cut - 846.62678
+ > GPU TIME: graphCut() init - 77.69120, count - 856.08205, flow - 39.33283
+ > DATA: graphCut() itrs - 1344
+
+2. E:/Jackie/Segmentation Data/Images/others/people1/normalized_A1posterLTA.bmp.raw.dat
+
+JF-Cut
+
+ > FLOW: computeCurrentFlow() - 64 - 27427342935
+ > FLOW: computeCurrentFlow() - 128 - 27665047564
+ > FLOW: computeCurrentFlow() - 192 - 27705779409
+ > FLOW: computeCurrentFlow() - 256 - 27714364441
+ > FLOW: computeCurrentFlow() - 320 - 27717380244
+ > FLOW: computeCurrentFlow() - 384 - 27718535911
+ > FLOW: computeCurrentFlow() - 448 - 27719081956
+ > FLOW: computeCurrentFlow() - 512 - 27719423692
+ > FLOW: computeCurrentFlow() - 576 - 27719577145
+ > FLOW: computeCurrentFlow() - 640 - 27719666688
+ > FLOW: computeCurrentFlow() - 704 - 27719673003
+ > LOG: graphCut() total -  52948 ms.
+ > ENERGY: graphCut() data - 2362239934, smooth - 3882596589
+ > GPU TIME: graphCut() push / relabel - 51279.01178, cut - 703.98797
+ > GPU TIME: graphCut() init - 74.35971, count - 448.80477, flow - 18.57389
+ > DATA: graphCut() itrs - 704
+
+Fast-Cut
+
+ > FLOW: computeCurrentFlow() - 64 - 25924756375
+ > FLOW: computeCurrentFlow() - 128 - 27071770193
+ > FLOW: computeCurrentFlow() - 192 - 27427671881
+ > FLOW: computeCurrentFlow() - 256 - 27580346966
+ > FLOW: computeCurrentFlow() - 320 - 27644618523
+ > FLOW: computeCurrentFlow() - 384 - 27676513960
+ > FLOW: computeCurrentFlow() - 448 - 27691511573
+ > FLOW: computeCurrentFlow() - 512 - 27701278637
+ > FLOW: computeCurrentFlow() - 576 - 27708160377
+ > FLOW: computeCurrentFlow() - 640 - 27712681376
+ > FLOW: computeCurrentFlow() - 704 - 27715320113
+ > FLOW: computeCurrentFlow() - 768 - 27717018760
+ > FLOW: computeCurrentFlow() - 832 - 27717711547
+ > FLOW: computeCurrentFlow() - 896 - 27718334597
+ > FLOW: computeCurrentFlow() - 960 - 27719153610
+ > FLOW: computeCurrentFlow() - 1024 - 27719468267
+ > FLOW: computeCurrentFlow() - 1088 - 27719594170
+ > FLOW: computeCurrentFlow() - 1152 - 27719602915
+ > FLOW: computeCurrentFlow() - 1216 - 27719622253
+ > FLOW: computeCurrentFlow() - 1280 - 27719648544
+ > FLOW: computeCurrentFlow() - 1344 - 27719673003
+ > LOG: graphCut() total -  98608 ms.
+ > ENERGY: graphCut() data - 2362239934, smooth - 3882596589
+ > GPU TIME: graphCut() push / relabel - 95605.87642, cut - 756.78115
+ > GPU TIME: graphCut() init - 83.24378, count - 869.09027, flow - 34.78278
+ > DATA: graphCut() itrs - 1344
+
+3. E:/Jackie/Segmentation Data/Videos/TimeSpaces/bmp-56/normalized_volume.raw.dat
+
+JF-Cut
+
+ > FLOW: computeCurrentFlow() - 8 - 80885843
+ > LOG: graphCut() total -  291 ms.
+ > ENERGY: graphCut() data - 3681339, smooth - 77205157
+ > GPU TIME: graphCut() push / relabel - 78.58077, cut - 164.51123
+ > GPU TIME: graphCut() init - 117.98746, count - 21.48691, flow - 3.72448
+ > DATA: graphCut() itrs - 15
+ 
+Min: 13
+
+Fast-Cut
+
+ > FLOW: computeCurrentFlow() - 8 - 80831237
+ > FLOW: computeCurrentFlow() - 16 - 80882961
+ > FLOW: computeCurrentFlow() - 24 - 80885730
+ > FLOW: computeCurrentFlow() - 32 - 80886453
+ > FLOW: computeCurrentFlow() - 40 - 80886496
+ > LOG: graphCut() total -  669 ms.
+ > ENERGY: graphCut() data - 3681339, smooth - 77205157
+ > GPU TIME: graphCut() push / relabel - 357.15242, cut - 164.72294
+ > GPU TIME: graphCut() init - 134.87894, count - 72.81395, flow - 11.22426
+ > DATA: graphCut() itrs - 40
+ 
+Min: 36
+
+4. E:/Jackie/Segmentation Data/Videos/Life of Pi/bmp-hd-32-2/normalized_volume.raw.dat
+
+JF-Cut
+
+ > FLOW: computeCurrentFlow() - 8 - 1178274163
+ > FLOW: computeCurrentFlow() - 16 - 1178327599
+ > FLOW: computeCurrentFlow() - 24 - 1178329431
+ > FLOW: computeCurrentFlow() - 32 - 1178329516
+ > LOG: graphCut() total -  1620 ms.
+ > ENERGY: graphCut() data - 85049100, smooth - 1093280427
+ > GPU TIME: graphCut() push / relabel - 1374.62086, cut - 170.39712
+ > GPU TIME: graphCut() init - 102.71296, count - 25.32112, flow - 5.73558
+ > DATA: graphCut() itrs - 35
+
+Fast-Cut
+
+ > FLOW: computeCurrentFlow() - 8 - 1177038046
+ > FLOW: computeCurrentFlow() - 16 - 1178168579
+ > FLOW: computeCurrentFlow() - 24 - 1178291436
+ > FLOW: computeCurrentFlow() - 32 - 1178316505
+ > FLOW: computeCurrentFlow() - 40 - 1178322731
+ > FLOW: computeCurrentFlow() - 48 - 1178325950
+ > FLOW: computeCurrentFlow() - 56 - 1178328342
+ > FLOW: computeCurrentFlow() - 64 - 1178329270
+ > FLOW: computeCurrentFlow() - 72 - 1178329463
+ > FLOW: computeCurrentFlow() - 80 - 1178329501
+ > FLOW: computeCurrentFlow() - 88 - 1178329527
+ > LOG: graphCut() total -  9886 ms.
+ > ENERGY: graphCut() data - 85049100, smooth - 1093280427
+ > GPU TIME: graphCut() push / relabel - 9410.68282, cut - 206.15178
+ > GPU TIME: graphCut() init - 102.68154, count - 110.85194, flow - 13.80176
+ > DATA: graphCut() itrs - 88
+ 
+5. E:/Jackie/Segmentation Data/Videos/Eep/bmp-40-hd/normalized_volume.raw.dat
+
+JF-Cut
+
+ > FLOW: computeCurrentFlow() - 4 - 180298088
+ > FLOW: computeCurrentFlow() - 8 - 180301005
+ > LOG: graphCut() total -  230 ms.
+ > ENERGY: graphCut() data - 6977887, smooth - 173323358
+ > GPU TIME: graphCut() push / relabel - 80.93133, cut - 72.71677
+ > GPU TIME: graphCut() init - 87.46470, count - 55.47149, flow - 4.42448
+ > DATA: graphCut() itrs - 10
+
+Fast-Cut
+
+ > FLOW: computeCurrentFlow() - 8 - 180200958
+ > FLOW: computeCurrentFlow() - 16 - 180297769
+ > FLOW: computeCurrentFlow() - 24 - 180300997
+ > FLOW: computeCurrentFlow() - 32 - 180301245
+ > LOG: graphCut() total -  987 ms.
+ > ENERGY: graphCut() data - 6977887, smooth - 173323358
+ > GPU TIME: graphCut() push / relabel - 743.40413, cut - 129.57510
+ > GPU TIME: graphCut() init - 87.50826, count - 44.43558, flow - 7.37389
+ > DATA: graphCut() itrs - 32
+
+6. E:/Jackie/Segmentation Data/Volumes/others/MRbrain/normalized_MRbrain.raw.dat
+
+JF-Cut
+
+ > FLOW: computeCurrentFlow() - 64 - 25973
+ > FLOW: computeCurrentFlow() - 128 - 28743
+ > FLOW: computeCurrentFlow() - 192 - 29013
+ > FLOW: computeCurrentFlow() - 256 - 29035
+ > LOG: graphCut() total -  1903 ms.
+ > ENERGY: graphCut() data - 0, smooth - 29036
+ > GPU TIME: graphCut() push / relabel - 1226.20998, cut - 368.69869
+ > GPU TIME: graphCut() init - 40.29091, count - 42.93059, flow - 0.89139
+ > DATA: graphCut() itrs - 288
+
+Fast-Cut
+
+ > FLOW: computeCurrentFlow() - 64 - 16958
+ > FLOW: computeCurrentFlow() - 128 - 24180
+ > FLOW: computeCurrentFlow() - 192 - 26124
+ > FLOW: computeCurrentFlow() - 256 - 26993
+ > FLOW: computeCurrentFlow() - 320 - 28646
+ > FLOW: computeCurrentFlow() - 384 - 28971
+ > FLOW: computeCurrentFlow() - 448 - 29035
+ > FLOW: computeCurrentFlow() - 512 - 29035
+ > LOG: graphCut() total -  10200 ms.
+ > ENERGY: graphCut() data - 0, smooth - 29036
+ > GPU TIME: graphCut() push / relabel - 9381.04960, cut - 173.84384
+ > GPU TIME: graphCut() init - 40.25568, count - 83.58038, flow - 1.66736
+ > DATA: graphCut() itrs - 528
+
+7. E:/Jackie/Segmentation Data/Volumes/others/Lobster/normalized_lobster.raw.dat
+
+JF-Cut
+
+ > FLOW: computeCurrentFlow() - 64 - 237917
+ > LOG: graphCut() total -  502 ms.
+ > ENERGY: graphCut() data - 0, smooth - 238402
+ > GPU TIME: graphCut() push / relabel - 321.47558, cut - 46.91347
+ > GPU TIME: graphCut() init - 23.46637, count - 12.79616, flow - 0.33277
+ > DATA: graphCut() itrs - 104
+
+Fast-Cut
+
+ > FLOW: computeCurrentFlow() - 64 - 168224
+ > FLOW: computeCurrentFlow() - 128 - 235870
+ > FLOW: computeCurrentFlow() - 192 - 238366
+ > LOG: graphCut() total -  3286 ms.
+ > ENERGY: graphCut() data - 0, smooth - 238402
+ > GPU TIME: graphCut() push / relabel - 2892.93341, cut - 88.30544
+ > GPU TIME: graphCut() init - 23.47619, count - 26.39661, flow - 0.65990
+ > DATA: graphCut() itrs - 216
+ 
+ 
+II. HD 7990
+
+1. T:/Segmentation Data/Images/others/Madagascar/normalized_CT0072 Madagascar Cartoon Characters .bmp.raw.dat
+
+JF-Cut
+
+ > DATA: graphCut() itrs - 640
+ > FLOW: computeCurrentFlow() - 64 - 13280314552
+ > FLOW: computeCurrentFlow() - 128 - 13472633463
+ > FLOW: computeCurrentFlow() - 192 - 13509647923
+ > FLOW: computeCurrentFlow() - 256 - 13524972954
+ > FLOW: computeCurrentFlow() - 320 - 13533001497
+ > FLOW: computeCurrentFlow() - 384 - 13535317737
+ > FLOW: computeCurrentFlow() - 448 - 13536037905
+ > FLOW: computeCurrentFlow() - 512 - 13536281984
+ > FLOW: computeCurrentFlow() - 576 - 13536334556
+ > FLOW: computeCurrentFlow() - 640 - 13536344426
+ > LOG: graphCut() total -  14220 ms.
+ > GPU TIME: graphCut() push / relabel - 12634.81289, cut - 399.37629
+ > GPU TIME: graphCut() init - 56.97303, count - 638.99511, flow - 19.89230
+ > DATA: graphCut() itrs - 640
+
+Min: 609
+
+Fast-Cut
+
+ > FLOW: computeCurrentFlow() - 64 - 11583609515
+ > FLOW: computeCurrentFlow() - 128 - 12910307216
+ > FLOW: computeCurrentFlow() - 192 - 13265063745
+ > FLOW: computeCurrentFlow() - 256 - 13397680147
+ > FLOW: computeCurrentFlow() - 320 - 13454814890
+ > FLOW: computeCurrentFlow() - 384 - 13482640346
+ > FLOW: computeCurrentFlow() - 448 - 13498908979
+ > FLOW: computeCurrentFlow() - 512 - 13509229360
+ > FLOW: computeCurrentFlow() - 576 - 13514835520
+ > FLOW: computeCurrentFlow() - 640 - 13520608940
+ > FLOW: computeCurrentFlow() - 704 - 13525410290
+ > FLOW: computeCurrentFlow() - 768 - 13530100222
+ > FLOW: computeCurrentFlow() - 832 - 13532870125
+ > FLOW: computeCurrentFlow() - 896 - 13534232763
+ > FLOW: computeCurrentFlow() - 960 - 13535075247
+ > FLOW: computeCurrentFlow() - 1024 - 13535531593
+ > FLOW: computeCurrentFlow() - 1088 - 13535765389
+ > FLOW: computeCurrentFlow() - 1152 - 13536029156
+ > FLOW: computeCurrentFlow() - 1216 - 13536222011
+ > FLOW: computeCurrentFlow() - 1280 - 13536302786
+ > FLOW: computeCurrentFlow() - 1344 - 13536344426
+ > LOG: graphCut() total -  45957 ms.
+ > GPU TIME: graphCut() push / relabel - 43244.67662, cut - 451.34193
+ > GPU TIME: graphCut() init - 57.85585, count - 671.14236, flow - 39.99452
+ > DATA: graphCut() itrs - 1344
+ 
+Min: 1344
+
+2. T:/Segmentation Data/Images/others/Lower Than Atlantis/normalized_A1posterLTA.bmp.raw.dat
+
+JF-Cut
+
+ > FLOW: computeCurrentFlow() - 64 - 27427342935
+ > FLOW: computeCurrentFlow() - 128 - 27665047564
+ > FLOW: computeCurrentFlow() - 192 - 27705779409
+ > FLOW: computeCurrentFlow() - 256 - 27714364441
+ > FLOW: computeCurrentFlow() - 320 - 27717380244
+ > FLOW: computeCurrentFlow() - 384 - 27718535911
+ > FLOW: computeCurrentFlow() - 448 - 27719081956
+ > FLOW: computeCurrentFlow() - 512 - 27719423692
+ > FLOW: computeCurrentFlow() - 576 - 27719577145
+ > FLOW: computeCurrentFlow() - 640 - 27719666688
+ > FLOW: computeCurrentFlow() - 704 - 27719673003
+ > LOG: graphCut() total -  24549 ms.
+ > GPU TIME: graphCut() push / relabel - 23464.39022, cut - 441.96282
+ > GPU TIME: graphCut() init - 60.60637, count - 308.44949, flow - 18.20548
+ > DATA: graphCut() itrs - 704
+ 
+Min: 668
+
+Fast-Cut
+
+ > FLOW: computeCurrentFlow() - 64 - 25924756375
+ > FLOW: computeCurrentFlow() - 128 - 27071770193
+ > FLOW: computeCurrentFlow() - 192 - 27427671881
+ > FLOW: computeCurrentFlow() - 256 - 27580346966
+ > FLOW: computeCurrentFlow() - 320 - 27644618523
+ > FLOW: computeCurrentFlow() - 384 - 27676513960
+ > FLOW: computeCurrentFlow() - 448 - 27691511573
+ > FLOW: computeCurrentFlow() - 512 - 27701278637
+ > FLOW: computeCurrentFlow() - 576 - 27708160377
+ > FLOW: computeCurrentFlow() - 640 - 27712681376
+ > FLOW: computeCurrentFlow() - 704 - 27715320113
+ > FLOW: computeCurrentFlow() - 768 - 27717018760
+ > FLOW: computeCurrentFlow() - 832 - 27717711547
+ > FLOW: computeCurrentFlow() - 896 - 27718334597
+ > FLOW: computeCurrentFlow() - 960 - 27719153610
+ > FLOW: computeCurrentFlow() - 1024 - 27719468267
+ > FLOW: computeCurrentFlow() - 1088 - 27719594170
+ > FLOW: computeCurrentFlow() - 1152 - 27719602915
+ > FLOW: computeCurrentFlow() - 1216 - 27719622253
+ > FLOW: computeCurrentFlow() - 1280 - 27719648544
+ > FLOW: computeCurrentFlow() - 1344 - 27719673003
+ > LOG: graphCut() total -  94008 ms.
+ > GPU TIME: graphCut() push / relabel - 91570.94604, cut - 383.04059
+ > GPU TIME: graphCut() init - 60.91007, count - 601.11555, flow - 33.56030
+ > DATA: graphCut() itrs - 1344
+
+Min: 1344
+
+3. T:/Segmentation Data/Videos/TimeScapes/normalized_volume.raw.dat
+
+Failed
+
+JF-Cut
+
+Fast-Cut
+
+4. T:/Segmentation Data/Videos/Life of Pi/normalized_volume.raw.dat
+
+JF-Cut
+
+ > FLOW: computeCurrentFlow() - 16 - 1178327599
+ > FLOW: computeCurrentFlow() - 32 - 1178329516
+ > LOG: graphCut() total -  891 ms.
+ > GPU TIME: graphCut() push / relabel - 683.12933, cut - 125.60593
+ > GPU TIME: graphCut() init - 73.78059, count - 23.95348, flow - 3.75318
+ > DATA: graphCut() itrs - 35
+ 
+Min: 34
+
+Fast-Cut
+
+ > FLOW: computeCurrentFlow() - 16 - 1178168579
+ > FLOW: computeCurrentFlow() - 32 - 1178316505
+ > FLOW: computeCurrentFlow() - 48 - 1178325950
+ > FLOW: computeCurrentFlow() - 64 - 1178329270
+ > FLOW: computeCurrentFlow() - 80 - 1178329501
+ > LOG: graphCut() total -  10048 ms.
+ > GPU TIME: graphCut() push / relabel - 9574.19022, cut - 167.35022
+ > GPU TIME: graphCut() init - 73.86859, count - 106.70889, flow - 7.49185
+ > DATA: graphCut() itrs - 88
+ 
+Min: 86
+
+5. T:/Segmentation Data/Videos/The Croods/normalized_volume.raw.dat
+
+JF-Cut
+
+ > FLOW: computeCurrentFlow() - 8 - 180301005
+ > LOG: graphCut() total -  172 ms.
+ > GPU TIME: graphCut() push / relabel - 48.01304, cut - 69.51748
+ > GPU TIME: graphCut() init - 62.22593, count - 29.49866, flow - 3.17185
+ > DATA: graphCut() itrs - 10
+
+Min: 10
+
+Fast-Cut
+
+ > FLOW: computeCurrentFlow() - 16 - 180297769
+ > FLOW: computeCurrentFlow() - 32 - 180301245
+ > LOG: graphCut() total -  1079 ms.
+ > GPU TIME: graphCut() push / relabel - 854.89911, cut - 98.11778
+ > GPU TIME: graphCut() init - 62.42800, count - 47.95288, flow - 4.74889
+ > DATA: graphCut() itrs - 32
+ 
+Min: 32
+
+6. T:/Segmentation Data/Volumes/others/MRbrain/normalized_MRbrain.raw.dat
+
+JF-Cut
+
+ > FLOW: computeCurrentFlow() - 64 - 25973
+ > FLOW: computeCurrentFlow() - 128 - 28743
+ > FLOW: computeCurrentFlow() - 192 - 29013
+ > FLOW: computeCurrentFlow() - 256 - 29035
+ > LOG: graphCut() total -  953 ms.
+ > GPU TIME: graphCut() push / relabel - 660.90208, cut - 49.87704
+ > GPU TIME: graphCut() init - 48.25215, count - 39.44518, flow - 0.70385
+ > DATA: graphCut() itrs - 288
+ 
+MIN: 282
+
+Fast-Cut
+
+ > FLOW: computeCurrentFlow() - 64 - 16958
+ > FLOW: computeCurrentFlow() - 128 - 24180
+ > FLOW: computeCurrentFlow() - 192 - 26124
+ > FLOW: computeCurrentFlow() - 256 - 26993
+ > FLOW: computeCurrentFlow() - 320 - 28646
+ > FLOW: computeCurrentFlow() - 384 - 28971
+ > FLOW: computeCurrentFlow() - 448 - 29035
+ > FLOW: computeCurrentFlow() - 512 - 29035
+ > LOG: graphCut() total -  11547 ms.
+ > GPU TIME: graphCut() push / relabel - 10323.77202, cut - 90.40563
+ > GPU TIME: graphCut() init - 56.97437, count - 72.28725, flow - 1.27333
+ > DATA: graphCut() itrs - 528
+
+MIN: 516
+ 
+7. T:/Segmentation Data/Volumes/others/Lobster/normalized_lobster.raw.dat
+
+JF-Cut
+
+ > LOG: graphCut() total -  281 ms.
+ > GPU TIME: graphCut() push / relabel - 153.92904, cut - 32.99022
+ > GPU TIME: graphCut() init - 30.93007, count - 11.25645, flow - 0.22681
+ > DATA: graphCut() itrs - 104
+
+MIN: 104
+
+Fast-Cut
+
+ > FLOW: computeCurrentFlow() - 64 - 168224
+ > FLOW: computeCurrentFlow() - 128 - 235870
+ > FLOW: computeCurrentFlow() - 192 - 238366
+ > LOG: graphCut() total -  4094 ms.
+ > GPU TIME: graphCut() push / relabel - 3501.75571, cut - 53.22829
+ > GPU TIME: graphCut() init - 24.46222, count - 23.26311, flow - 0.44208
+ > DATA: graphCut() itrs - 216
+
+MIN: 214
+ 
+I. Grid-Cut * 8
+
+org
+
+instance                            time-init  time-maxflow  time-output  total
+middlebury-flower                           3             2            1      6
+middlebury-person                           3             3            1      7
+middlebury-sponge                           3             2            1      6
+uwo-bone                                  108           382           29    519
+uwo-liver                                  69          3830           17   3916
+uwo-babyface                               69          1413           19   1501
+uwo-adhead                                195          3906           48   4149
+image-madagascar                          970         10988          311  12268
+image-lta                                 882         11951          306  13139
+video-4k                                 2130           245          366   2741
+video-croods                             1605           218          292   2115
+video-pi                                 1293           560          309   2162
+volume-brain                              112           460           25    597
+volume-lobster                             73           564           20    658
+
+scale - 2
+
+instance                            time-init  time-maxflow  time-output  total
+middlebury-flower                          46            31           12     88
+middlebury-person                          46            34           12     91
+middlebury-sponge                          52            14           13     79
+uwo-bone                                  847         19336          219  20403
+uwo-liver                                 476         255639          134  256249
+uwo-babyface                              593         232890          173  233656
+uwo-adhead                               1374         19538          362  21274
+
+scale - 4
+
+instance                            time-init  time-maxflow  time-output  total
+middlebury-flower                         773           510          179   1462
+middlebury-person                         744           455          178   1378
+middlebury-sponge                         869           196          200   1265
+
+II. Grid-Cut * 1
+
+org
+
+instance                            time-init  time-maxflow  time-output  total
+middlebury-flower                           5            11            2     17
+middlebury-person                           2             6            1     10
+middlebury-sponge                           3             3            1      7
+uwo-bone                                  111           730           26    867
+uwo-liver                                  62          3177           15   3254
+uwo-babyface                               68          2534           17   2618
+uwo-adhead                                166          6307           44   6517
+image-madagascar                          800         28574          284  29658
+image-lta                                 716         31071          268  32054
+video-4k                                 2467           779          394   3640
+video-croods                             1844           728          311   2883
+video-pi                                 1491          2152          282   3926
+volume-brain                               98           477           24    599
+volume-lobster                             65          1344           19   1428
+
+scale - 2
+
+instance                            time-init  time-maxflow  time-output  total
+middlebury-flower                          35            83           13    131
+middlebury-person                          36            72           13    121
+middlebury-sponge                          42            37           14     92
+uwo-bone                                  768         31085          204  32057
+uwo-liver                                 426         237049          118  237593
+uwo-babyface                              499         230946          147  231593
+uwo-adhead                               1268         39805          341  41414
+
+scale - 4
+
+instance                            time-init  time-maxflow  time-output  total
+middlebury-flower                         597          1604          191   2392
+middlebury-person                         606          1269          194   2069
+middlebury-sponge                         718           590          223   1530
+
+III. BK
+
+org
+
+instance                            time-init  time-maxflow  time-output  total
+middlebury-flower                          13            12            4     28
+middlebury-person                          13            12            4     29
+middlebury-sponge                          15             9            4     28
+uwo-bone                                  531          5088          142   5762
+uwo-liver                                 284         10409           76  10768
+uwo-babyface                              345          8503           92   8940
+uwo-adhead                                874         22090          228  23192
+image-madagascar                         5816         107619         1238  114673
+image-lta                                3543         99438         1025  104006
+video-4k                                 9028          7001         2146  18176
+video-croods                             5814          5269         1520  12603
+video-pi                                 4641          5839         1220  11699
+volume-brain                              491          3282          129   3902
+volume-lobster                            359          6570           99   7029
+
+scale - 2
+
+instance                            time-init  time-maxflow  time-output  total
+middlebury-flower                         216           219           60    495
+middlebury-person                         211           223           60    493
+middlebury-sponge                         260           139           67    467
+uwo-bone                                 4337         199426         1111  204874
+uwo-liver                                2224         852411          644  855280
+uwo-babyface                             2729         805562          735  809025
+uwo-adhead                               7993         214290         1651  223934
+
+scale - 4
+
+instance                            time-init  time-maxflow  time-output  total
+middlebury-flower                        3258          5696          896   9849
+middlebury-person                        3311          4848          952   9111
+middlebury-sponge                        3728          2763         1046   7537

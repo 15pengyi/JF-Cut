@@ -1,0 +1,141 @@
+
+%-------------------------------------------------------------------------
+\section{Discussions}
+\label{section discussions}
+
+We analyze our tuning techniques and discuss the quality and the limitations of our approach.
+
+\subsection{\textbf{Convergence Proof}}
+
+The standard push-relabel method \cite{88GT} maintains a preflow and always keeps a valid labeling:
+
+\begin{itemize}
+\item[-] \textbf{Definition 1 (Preflow)} An assignment of a non-negative flow $f(u, v)$ to each edge $(u, v)$ of a network $(G = (V, E), s, t, c)$ is a preflow if for each edge $(u, v)$, $f(u, v) \le c(u, v)$ and for each vertex $v \in V - {t}$, $\sum_{u}f(u, v) - \sum_{w}f(v, w) \ge 0$.
+\item[-] \textbf{Definition 2 (Excess Flow)} The excess flow at $v$ is defined as $e_f(v) = \sum_{u}f(u, v) - \sum_{w}f(v, w)$.
+\item[-] \textbf{Definition 3 (Invariant)} At every step, if there is an edge $(u, v)$ that has a positive capacity $c'(u, v) > 0$ in the residual network, then $h(u) \le h(v) + 1$ and this labeling is $valid$.
+\end{itemize}
+
+The standard method consists of two steps: initialization and the main loop.
+In the first step, it saturates all the edges $(s, v) \in E$ from the source $s$ and sets the original labeling $h(s) = n$, $h(v) = 0$ for all $v \in V$, $v \ne s$.
+This gives a valid preflow $f_0$.
+In the main loop, for each active node $u$, perform the following push and relabel operations:
+
+\begin{itemize}
+\item[-] \textbf{Push}(u) \  If $\exists v$ with admissible arc $(u, v) \in E_f$, then send flow $\delta \gets \min(c_f(u, v), e_f(u))$ from $u$ to $v$.
+\item[-] \textbf{Relabel}(u) \  If for all arcs $(u, v)$ out of $u$, either $(u, v) \notin E_f$ or $h(v) \ge h(u)$, then set $h(u) = 1 + \min_{v:(u,v) \in E_f} h(v)$.
+\end{itemize}
+
+In our method, we take the initialization step and do push or relabel in a specific order until there is no augmenting $s-t$ path (ensured by the convergence detection).
+Three lemmas are provided below to prove the convergence of our algorithm:
+
+\begin{itemize}
+\item[-] \textbf{Lemma 1} The labels $h$ remain valid in \textbf{H4} (the last step of our method in Section \ref{section hpr}).
+\item[] \textbf{Proof:}
+The proof is done by induction.
+Initially $h$ is valid with respect to $f_0$.
+In \textbf{H4}, we perform push and relabel operations alternatively.
+When we push a node on the admissible arc $(u, v)$, the new arc $(v, u) \in E_f$ satisfies $d(v) = d(u) - 1 \le d(u) + 1$ and the labels remain valid.
+When we relabel a node, the new label is the largest one while remaining valid.
+Because each operation is independent (no data conflict), the property remains true.
+
+\item[-] \textbf{Lemma 2} The push-relabel given by \textbf{H3} is equivalent to the original push-relabel algorithm.
+\item[] \textbf{Proof:}
+In our method, each operation (push or relabel) is the same as the standard one and we perform these operations in parallel.
+In \textbf{H3}, we process even blocks and odd blocks alternatively.
+For each block, we relabel even nodes and odd nodes respectively, and then push them in the same way.
+This ensures that, there is no data conflict and all the operations are independent.
+And there exists at least one sequential way to perform these operations to get the same results.
+Note that in the original method, changing the processing order does not affect the convergence.
+Thus, our method is equivalent to the original push-relabel algorithm.
+
+\item[-] \textbf{Lemma 3} The final preflow resulted from \textbf{H2} is a maximum flow.
+\item[] \textbf{Proof:}
+In \textbf{H2}, we start from the foreground nodes and repeat expanding them in the residual graph.
+If the algorithm terminates without finding any background node, then there is no augmenting-path.
+Hence the final preflow is a maximum flow.
+\end{itemize}
+
+Overall, these lemmas prove that our method can yield global optimal results like the standard push-relabel algorithm.
+
+\subsection{\textbf{Complexity Analysis}}
+
+The complexity of the original push-relabel algorithm is $O(V^2 E)$.
+Most GPU based methods are based on it and use different strategies to process active nodes to improve the performance.
+However, the accurate analysis is quite difficult.
+As the access of global memory ($400-600$ cycles) is much slower than shared memory ($20-40$ cycles), we can use the workload per global memory read/write as metric to compare different methods.
+
+\begin{itemize}
+\item[-] \textbf{Metric 1} The first metric $N$ is the number of operations (push or relabel) per global memory read/write. A larger $N$ means a lower complexity.
+\item[-] \textbf{Metric 2} The second metric $D$ is the propagation distance of a flow per global memory read/write. A larger $D$ means a lower complexity.
+\end{itemize}
+
+\begin{table}
+\center
+\caption{Complexity Analysis}
+\label{table complexity analysis}
+{
+    \fontsize{6.5pt}{7.5pt}\selectfont
+    \begin{tabular}{@{ }c|c|c|c|c|c@{ }}
+    \hline
+    Metric   & Dimension & Block Size & \multicolumn{2}{c}{Wave Push} & \multicolumn{1}{c}{Block-Wise}\\
+    \hline
+    -   & - & -         & CUDA & Fast-Cut & JF-Cut\\
+    \hline
+    $N$ & 2 & -         & 0.25 & 0.25 & 4    \\
+    $N$ & 3 & -         & -    & 0.13 & 6    \\
+    \hline
+    $D$ & 2 & 16 x 16   & 16   & 16   & 256  \\
+    $D$ & 2 & 32 x 32   & 32   & 32   & 1024 \\
+    $D$ & 3 & 4 x 4 x 4 & -    & 4    & 64   \\
+    $D$ & 3 & 8 x 8 x 8 & -    & 8    & 512  \\
+    \hline
+    \end{tabular}
+}
+\end{table}
+
+In terms of \textbf{Metric 1}, because CUDA-Cut and Fast-Cut perform a Wave Push, they can perform at most $N=\frac{1}{2d}$ operations (push or relabel in all the directoins) within one global memory read/write, where $d$ denotes the dimension.
+The reason is that, for each direction, one operation (push or relabel) in their method needs at least one global memory read/write.
+In our method, for one node, we can perform at least $N'=2d$ operations within one global memory read/write (see \tablename \ \ref{table complexity analysis}).
+
+In terms of \textbf{Metric 2}, for one block, CUDA-Cut and Fast-Cut can send a flow along $D=\max{\{x, y, z\}}$ edges at most in one direction within one global memory read/write, where $(x, y, z)$ denotes the block size.
+However, we can send a flow from one node to any other node in the same block, which means in one global memory read/write, the maximum propagation distance of a flow that we can achieve is $D'=x \times y \times z$.
+
+\tablename \ \ref{table gpu performance} shows that the workload per global memory read/write in our method is much larger than the ones in others.
+Although the worst-case complexity of our algorithm is $O(V^2 E)$ which is the same as CUDA-Cut and Fast-Cut.
+The average running time of our method is $n = \frac{N'D'}{ND} \approx \frac{4d^2xyz}{\max{\{x, y, z\}}}$ times faster than CUDA-Cut and Fast-Cut.
+We increase the information propagation speed throughout the block.
+Ours leads to a fast convergence and a lower complexity compared with CUDA-Cut and Fast-Cut (see \tablename \ \ref{table convergence speed}).
+
+\subsection{\textbf{Quality}}
+
+Compared with CUDA-Cut, our approach guarantees the global minimal, meaning that we can get the optimal results.
+For images such as Flower and Person (see \tablename \ \ref{table gpu performance}), CUDA-Cut yields inaccurate results.
+This means that the underlying flow is less than the maximum one (see the Person data set, for which the accuracy is only 0.358).
+This is because CUDA-Cut does not check the convergence and stops iterating after a specific number of iterations before reaching the global optimum.
+In contrast, JF-Cut, Fast-Cut, BK and Grid-Cut guarantee the global optimum and the maximum flow they get are the same, as shown in \tablename \ \ref{table benchmark}.
+
+In practice, given the same model (the way of defining excess flow and edge capacity), these methods get the same segmentation boundaries due to the global convergence (see \figurename \ref{figure image segmentation} and \figurename \ref{figure video cutout}).
+Moreover, we use in-block push-relabel to improve the speed of information propagation, achieve a fast convergence compared with Fast-Cut.
+In this sense our approach can handle large data sets more efficiently and yields more practical results (https://github.com/15pengyi/JF-Cut).
+
+\subsection{\textbf{Algorithm Tuning}}
+
+For better performance, we develop a 2D version of our approach to handle images.
+And the parameter settings are different for small data sets and large data sets.
+When the data sets are small, we use $(k_1, k_2) = (4, 2)$ to increase the frequency of active block counting to ensure fewer iterations.
+For large data sets, $(k_1, k_2)$ is set to $(16, 4)$ to reduce the cost of both active block counting and convergence detection.
+
+Other optimizations include using local memory to cache the data which have multiple read or write per execution, checking if the value has changed before writing, using \textit{SOA} (Structure of Array) instead of \textit{AOS} (Array of Structures) and designing a compact structure (four bytes per unit) to support a coalesced read and write for global memory and avoid bank conflicts.
+We also use \textit{AMD APP Profiler} and \textit{NVIDIA Visual Profiler} to help us identify performance bottlenecks.
+
+\subsection{\textbf{Limitations}}
+
+Our approach has several limitations compared with CPU-based methods.
+First, the feasible data size of our approach is limited by GPU memory, i.e., \textit{CL\_DEVICE\_GLOBAL\_MEM\_SIZE} and \textit{CL\_DEVICE\_MAX\_MEM\_ALLOC\_SIZE} which are defined by the OpenCL environment.
+For \textit{GeForce GTX TITAN} and \textit{AMD Radeon HD 7990} these parameters are (6GB, 1.5GB) and (3GB, 512MB) respectively.
+Instead, the size of contiguous-memory on the CPU can be much larger, e.g. 32GB.
+In addition, GPU based methods have to copy data from host memory to device memory, which consumes extra time.
+Compared with BK techniques that are affordable for unstructured data, our method currently only supports structured data.
+
+To overcome the limitation of GPU memory, extremely large data can be partitioned and distributed on the GPU clusters.
+In terms of unstructured data, we need to convert the unstructured grid into a hierarchy of regular grids and perform JF-Cut in different levels.

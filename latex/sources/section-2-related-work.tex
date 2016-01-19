@@ -1,0 +1,53 @@
+
+%-------------------------------------------------------------------------
+\section{Related Work}
+\label{section related work}
+
+%-------------------------------------------------------------------------
+\subsection{Augmenting Path Based Methods}
+
+The kernel of graph cut is to solve a maximum flow problem, which is typically addressed by finding augmented paths in the residual network.
+The pioneered Ford-Fulkerson algorithm has a computational complexity of $O(E \max|f|)$, where $E$ and $f$ denote number of edges and the maximum flow, respectively.
+It, however, can only handle weights with integer values.
+Thereafter, Edmonds-Karp algorithm takes the Breadth-First Search(BFS) to find the augmented path with a complexity of $O(V E^2)$, and is feasible for weights with floating point values.
+Similarly, Dinitz blocking flow algorithm also takes the BFS, but differs from others in that it searches multiple shortest path in each iteration, and has a computational complexity of $O(V^2 E)$.
+The complexity can be further reduced into $O(V E \log V)$ by employing a dynamic tree technique.
+Further, a complexity of $O(V E)$ can be achieved by combining the binary blocking flow algorithm and the King-Rao-Tarjan (KRT) algorithm \cite{13O}.
+
+For most applications in computer vision, graph is sparse and structured (image and video).
+Thus, Boykov-Kolmogorov (BK) algorithm \cite{04BK} leverages a search tree structure, and achieves almost 10 times faster than Dinitz blocking flow algorithm.
+The Grid-Cut algorithm \cite{12JSH} further refines the data structure and optimizes the locality usage, leading to 4 times speedup.
+The main limitation of augmented path based methods is that a global data structure needs to be maintained (like array, tree or sets), and thus has a low parallelization.
+This makes these methods inefficient for large-scale data sets, although they ensure accuracy.
+
+There have been many solutions for this problem.
+For instance, Lazy Snapping \cite{04LSTS} employs over-segmentation to reduce computation.
+Grab-Cut \cite{04RKB} adopts the GMM model to reduce the data size.
+Other solutions employ hierarchical structures (like hierarchical mean-shift \cite{05WBCAC} or narrow band algorithm \cite{05LSGX}) to achieve multi-level cut.
+Note that, this kind of approaches improves the performance at the cost of the accuracy.
+
+%-------------------------------------------------------------------------
+\subsection{Push-Relabel Based Methods}
+
+The push-relabel scheme is an alternative scheme for solving the maximum flow problems.
+The basic version has a complexity of $O(V^2 E)$.
+If an FIFO-based heuristic algorithm is used, the complexity becomes $O(V^3)$.
+Using a dynamic tree structure leads to a complexity of $O(V E log(V^2 / E))$.
+The HI-PR algorithm selects the highest-label nodes for discharge and achieves robust performance due to the combination of global and gap relabeling heuristics \cite{88GT, 97CG}.
+The PAR algorithm maintains a preflow and a distance labeling and outperforms HI-PR on both DIMACS families and vision instances \cite{08G}.
+Generally, the serial push-relabel scheme is faster than Dinitz algorithm, but is slower than the Boykov-Kolmogorov algorithm \cite{04BK, 12VB}.
+
+%-------------------------------------------------------------------------
+\subsection{Parallelization Methods}
+
+Parallelization is a widely employed mechanism to speedup the computation.
+Because the push-relabel scheme is more compatible with parallelization than the augmented path scheme, it has been widely refined to be GPU implementations such as CUDA-Cut \cite{08VN} and Fast-Cut~\cite{09S, 11W} approaches.
+
+The earliest CUDA-Cut algorithm \cite{08VN} is a straightforward implementation of the conventional Push-relabel algorithm.
+It performs push followed by pull to avoid data conflict and achieves 10-fold speedups over BK.
+The disadvantage is that it may yield inaccurate results because in some cases it stops iterating before reaching the global optimum which is unacceptable.
+In our method, we use convergence detection to do enough iterations to guarantee the global minima and ensure accuracy.
+
+The fast-cut algorithm \cite{11W} introduces wave push and global relabel to improve CUDA-Cut.
+However, it has a low convergence speed, this is insufficient to handle large data sets.
+In order to solve this problem, we introduce a block-wise push-relabel technique to accelerate the propagation of flow and the convergence speed.

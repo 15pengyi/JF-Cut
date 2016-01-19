@@ -46,6 +46,20 @@
 #include "QGCPanel.h"
 #include "QGCWidget.h"
 
+typedef CL_API_ENTRY cl_int (CL_API_CALL *clGetGLContextInfoKHR_fn)(
+    const cl_context_properties *properties,
+    cl_gl_context_info param_name,
+    size_t param_value_size,
+    void *param_value,
+    size_t *param_value_size_ret);
+
+/**
+ * Rename references to this dynamically linked function to avoid
+ * collision with static link version
+ */
+#define clGetGLContextInfoKHR clGetGLContextInfoKHR_proc
+static clGetGLContextInfoKHR_fn clGetGLContextInfoKHR;
+
 QGCWidget::QGCWidget(QWidget *parent)
     : QGLWidget(parent),
     corporation(), dataFileName(), dataFilePath(), objectFileName(), gradientFileName(), // Data file
@@ -718,15 +732,19 @@ void QGCWidget::initOpenCL()
     if (platforms.empty())
         throw QError(2, Q_RUNTIME_ERROR, "platform not available.");
     
-    cl_bool openclSupported = 0, openglSupported = 0, imageSupport = 0;
-    std::vector<cl_context_properties> properties(0);
+    cl_bool openclSupported = 0, openglSupported = 0, imageSupport = 0, deviceSupported = 0;
+    std::vector<cl_context_properties> clProperties(0);
     for(auto i = platforms.begin(); i != platforms.end(); i++)
     {
+        clGetGLContextInfoKHR = (clGetGLContextInfoKHR_fn) clGetExtensionFunctionAddressForPlatform((*i)(), "clGetGLContextInfoKHR");
+        if (!clGetGLContextInfoKHR) continue;
+
         std::string platformName = i->getInfo<CL_PLATFORM_NAME>();
-        if (platformName.find(corporation) == std::string::npos) continue;
+        openclSupported = platformName.find(corporation) != std::string::npos;
+        if(!openclSupported) continue;
 
         std::string platformVersion = i->getInfo<CL_PLATFORM_VERSION>();
-        openclSupported = platformVersion.find("OpenCL 1.") != std::string::npos;
+        openclSupported = platformVersion.find("OpenCL 1.") != std::string::npos || platformVersion.find("OpenCL 2.") != std::string::npos;
         if(!openclSupported) continue;
         
         // Device info
@@ -743,11 +761,13 @@ void QGCWidget::initOpenCL()
             if (!openglSupported) continue;
             
             // Define OS-specific context properties and create the OpenCL context
+            std::vector<cl_context_properties> properties(0);
             #ifdef __APPLE__
                 CGLContextObj kCGLContext = CGLGetCurrentContext();
                 CGLShareGroupObj kCGLShareGroup = CGLGetShareGroup(kCGLContext);
                 properties.push_back(CL_CONTEXT_PROPERTY_USE_CGL_SHAREGROUP_APPLE);
                 properties.push_back((cl_context_properties)kCGLShareGroup);
+                properties.push_back(0);
             #else
                 #ifdef UNIX
                     properties.push_back(CL_GL_CONTEXT_KHR);
@@ -756,7 +776,7 @@ void QGCWidget::initOpenCL()
                     properties.push_back((cl_context_properties)glXGetCurrentDisplay());
                     properties.push_back(CL_CONTEXT_PLATFORM);
                     properties.push_back((cl_context_properties)(*i)());
-                    clDevice = *j;
+                    properties.push_back(0);
                 #else // Win32
                     properties.push_back(CL_GL_CONTEXT_KHR);
                     properties.push_back((cl_context_properties)wglGetCurrentContext());
@@ -764,20 +784,26 @@ void QGCWidget::initOpenCL()
                     properties.push_back((cl_context_properties)wglGetCurrentDC());
                     properties.push_back(CL_CONTEXT_PLATFORM);
                     properties.push_back((cl_context_properties)(*i)());
-                    clDevice = *j;
+                    properties.push_back(0);
                 #endif
             #endif
 
+            cl_device_id device(0);
+            cl_int status = clGetGLContextInfoKHR(properties.data(), CL_CURRENT_DEVICE_FOR_GL_CONTEXT_KHR, sizeof(cl_device_id),  &device, NULL);
+            deviceSupported = status == CL_SUCCESS;
+            if (!deviceSupported) continue;
+            
+            clProperties = properties;
+            clDevice = cl::Device(device);
             break;
         }
 
         break;
     }
-    properties.push_back(0);
-    if (!openclSupported || !openglSupported || !imageSupport)
-        throw QError(2, Q_RUNTIME_ERROR, "OpenCL, OpenGL or Image not supported.");
+    if (!openclSupported || !openglSupported || !imageSupport || !deviceSupported)
+        throw QError(2, Q_RUNTIME_ERROR, "OpenCL, OpenGL, Image, or Device not supported.");
 
-    clContext = cl::Context(clDevice, properties.data());
+    clContext = cl::Context(clDevice, clProperties.data());
     
     clQueue = cl::CommandQueue(clContext, clDevice, CL_QUEUE_PROFILING_ENABLE);
 

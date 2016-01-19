@@ -1,0 +1,16 @@
+1.1 (2012-08-30) :
+ - Reduced memory footprint by 10%-25%, depending on graph density and type of edge capacities
+ - GridGraph constructor now throws the std::bad_alloc exception when it fails to allocate memory
+ - Improved OS X support in multi-threaded solvers
+ - Fixed bug which caused GridGraph_2D_8C to return incorrect results
+ - Fixed bug causing GridCut to hang on some graphs with floating-point capacities
+ - Fixed crash in GridGraph_3D_6C_MT when grid height was smaller than grid depth
+ - Fixed compile error in GridGraph_*_MT when function "max" was not defined
+ - Fixed compile error when "MIN" or "MAX" macro was defined
+ - Fixed bug which caused crash or invalid results under some rare conditions
+ - GridGraph_*_MT.h now includes the <windows.h> header more carefully on Windows
+ - Fixed unused variable and reordering warnings under GCC
+
+1.0 (2012-06-02) :
+ - Initial release
+

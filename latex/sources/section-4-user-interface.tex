@@ -1,0 +1,89 @@
+
+%-------------------------------------------------------------------------
+\section{User Interaction}
+\label{section user interaction}
+
+We design a user interface for both images and videos.
+It helps users mark foreground and background based on visibility, build an energy function according to the scenario, make local refinements and finally shows the graph cut results.
+
+%-------------------------------------------------------------------------
+\subsection{Labeling}
+
+For videos, it is quite difficult for users to specify the foreground and background elements.
+The conventional way is to mark the nodes frame by frame, which is time-consuming.
+In our system, we provide users a WYSIWYG way to do labeling (both for images and videos).
+The basic idea is to mark what users actually see based on visibility.
+This technique is combined with a ray casting algorithm which requires users to specify a visibility threshold \cite{05BS, 11CM}.
+
+%-------------------------------------------------------------------------
+\subsection{Scenario-Driven Energy Function}
+
+An \textit{Energy Function} is used to define the capacity of each edge in the graph, which measures the similarity of different subsets.
+The generic form of the energy function is given by:
+
+\begin{equation}
+\label{equation energy function}
+E = \lambda \sum R(p) + \sum B(p, q)
+\end{equation}
+
+where $R$ and $B$ denote the region properties and boundary properties respectively, $\lambda$ specifies a relative importance of the region properties versus the boundary properties.
+We provide users with different ways to build the energy function for different scenarios.
+
+\paragraph*{\textbf{Scalar Field Data}} we simplify the energy function introduced by Boykov-Kolmogorov \cite{04BK} which uses a probability distribution to measure the similarity and has a low accuracy.
+We propose to focus on the continuity of a structure:
+
+\begin{equation}
+\label{equation bk_capacity}
+C_{s}(p,q) = \left\{
+    \begin{array}{ll}
+    0 & p, q \in \mathcal{F} \bigcup \mathcal{B}\\
+    exp(-\frac{(I_p - I_q)^2}{2\sigma^2}) & otherwise
+    \end{array}
+\right.
+\end{equation}
+
+\begin{equation}
+\label{equation bk_excessflow}
+E_{s}(p) = \left\{
+    \begin{array}{ll}
+    +E_{max} & p \in \mathcal{F}\\
+    -E_{max} & p \in \mathcal{B}\\
+    0 & p \in \mathcal{U}
+    \end{array}
+\right.
+\end{equation}
+
+where the nodes are divided into three groups: $\mathcal{F}$(foreground), $\mathcal{B}$(background) and $\mathcal{U}$(unknown).
+$C_s$ denotes the capacity of the neighboring edge, $E_s$ denotes the excess flow of a node.
+$I$ denotes the intensity and $\sigma$ can be estimated as "sampling error".
+
+\paragraph*{\textbf{Vector Field Data}} We define the region and boundary terms similar to \textit{Lazy Snapping} which measures the similarity in the feature-space:
+
+\begin{equation}
+\label{equation lazy capacity}
+C_{v}(p,q) = \left\{
+    \begin{array}{ll}
+    0 & p, q \in \mathcal{F} \bigcup \mathcal{B}\\
+    \frac{1}{1 + \| \mathbf{v}_p - \mathbf{v}_q \|} & otherwise
+    \end{array}
+\right.
+\end{equation}
+
+\begin{equation}
+\label{equation lazy excessflow}
+E_{v}(p) = \left\{
+    \begin{array}{ll}
+    +E_{max} & p \in \mathcal{F}\\
+    -E_{max} & p \in \mathcal{B}\\
+    \lambda \frac{\min{\|\mathbf{c}_i^\mathcal{B}-\mathbf{v}_p \|} - \min{\|\mathbf{c}_i^\mathcal{F}-\mathbf{v}_p \|}}{\min{\|\mathbf{c}_i^\mathcal{B}-\mathbf{v}_p \|} + \min{\|\mathbf{c}_i^\mathcal{F}-\mathbf{v}_p \|}} & p \in \mathcal{U}
+    \end{array}
+\right.
+\end{equation}
+
+where $C_v$ denotes the neighbor-capacity, $E_v$ denotes the excess flow and is defined by the minimum distance to the center of a cluster which the current node belongs to.
+These centers are computed by \textit{K-Means Clustering} which is also parallelized.
+It helps us extract key features from the foreground and background, so that the noises can be effectively restrained and the accuracy is improved.
+In this algorithm, the number of clusters $k$ is set to be 8, and the seed points are initialized using a histogram equalization technique.
+
+Our system also supports features extraction, which can convert a scalar data into a multi-dimensional data \cite{10PC}.
+These features include gradient, hessian matrix \cite{02KKH} and curvature \cite{03KWTM}.

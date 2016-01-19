@@ -1,0 +1,143 @@
+
+LICENSE AGREEMENT
+=================
+
+1. INTRODUCTION
+
+This License Agreement (the "Agreement") is an agreement concluded between You and CTU. Please read the terms of this Agreement carefully. By downloading, accessing, saving or Using the Software Library GridCut or any part of it You agree with this Agreement. If You do not agree to any term hereof, quit downloading, accessing, saving or Using the Software Library, erase or otherwise dispose of all Software Library components already downloaded or saved and note that You do not have any right to Use the Software Library.
+
+
+2. DEFINITIONS
+
+The undermentioned terms (written with capital first letters) have the following meaning: 
+
+2.1. "Customer" shall mean a person for whom or on whose behalf You develop the Developer Software, who holds a license or sublicense to the Developer Software or who otherwise in own name utilizes the Developer Software (separately or as a part of another software). If You develop the Developer Software for yourself or utilize the Developer Software in your own name, You are a Customer; 
+
+2.2. "CTU" shall mean Czech Technical University in Prague, Faculty of Electrical Engineering, Technicka 2, 166 27 Prague 6, Czech Republic; 
+
+2.3. "Developer Software" shall mean software (computer program, software library etc.), computer application or other software-related product You developed, in which the Software Library is incorporated or to which it is attached (linkage). The incorporation or attachment shall be understood as a logical operation to ensure function of the Developer Software other than replicating the Software Library; 
+
+2.4. "License" shall mean the license granted to You by this Agreement; 
+
+2.5. "Services" shall mean maintenance, update, upgrade and other accompanying services possibly provided by CTU in connection with the Software Library and their tangible or intangible (e.g. software) content; 
+
+2.6. "Software Library" shall mean the software library (source code) commercially named GridCut whose function is efficient computation of minimum cut in graphs with grid topology. The Software Library shall include all its content and materials, whether in electronic or hard form, provided in connection with the source code. The Software Library shall also mean any upgraded, updated or modified version of the Software Library as well as all copies of the Software Library in any form; 
+
+2.7. "Software Library Price" shall mean the payment (consideration) for the License under this Agreement. Unless indicated otherwise, the Software Library Price is quoted without VAT; 
+
+2.8. "Use of the Software Library", "Using" etc. shall mean to utilize the Software Library in accordance with its function and adequately to its nature and purpose. It shall include downloading, saving, copying, accessing, running, editing, linking the Software Library or otherwise benefiting from the Software Library; and 
+
+2.9. "You" shall mean you personally or an entity (e.g. a corporation) on whose behalf you act as agent, executive, employee or else. Please note that if you are not legally entitled to act on behalf of the entity you claim to act for (and if your acts cannot be attributed to that entity in accordance with the law, either), you personally are bound by this Agreement.
+
+
+3. CTU'S TITLE IN THE SOFTWARE LIBRARY
+
+3.1. The Software Library has been developed in course of a research conducted by CTU and CTU is the sole holder of copyright and other intellectual property rights to the Software Library (source code), especially of the right to grant licenses. 
+
+3.2. The Software Library is subject to a pending U.S. patent application (application number 13/226, 109, filing date 09/06/2011). CTU is, as the patent application assignee, beneficiary of rights following from the pending patent application, including licensing of the Software Library. 
+
+3.3. Third persons' copyrights and other intellectual property rights included in the Software Library are protected under this Agreement in the same way as CTU's rights.
+
+
+4. GENERAL LICENSING PROVISIONS
+
+4.1. CTU hereby grants You a non-exclusive License for Using the Software Library under conditions as follows. The License shall apply also to patent rights after granting of the patent according to art. 3.2 (and it shall persist in full extent if the patent is not granted for any reason). 
+
+4.2. The License is granted to You either as Free License (art. 5) or Commercial License (art. 6). Unless expressly agreed otherwise, if You download or otherwise acquire the Software Library free of charge (subject to art. 5.1), You are granted the Free License. The Commercial License is granted to You upon payment of the Software Library Price. If You Use the Software Library on the basis of the Free License, You have the right, subject to prior notice to CTU (in form which CTU may set down), pay the Software Library Price and thus expand the Free License to the Commercial License; however, CTU reserves the right not to grant You the Commercial License, if You breach or breached any License term. 
+
+4.3. Irrespective of the type of the License, You may translate, adapt, arrange or otherwise alter the Software Library (source code), however not in a way which would interfere with CTU's copyright. You may not counterfeit the Software Library, alter the Software Library to render it defective, inferior or malicious, or otherwise handle the Software Library in conflict with CTU's goodwill or reasonable interests as a university (e.g. associating the Software Library with criminal or sexual explicit content). You may not enable unauthorized use or disposition of the Software Library to third persons. 
+
+4.4. All rights not expressly granted to You by this Agreement remain CTU's domain. You may not transfer or pledge the License without written consent of CTU. You may not grant sublicenses to the Software Library.
+
+
+5. FREE LICENSE
+
+5.1. Free License is granted to You if You acquire the Software Library free of charge from CTU's website, through an authorized distributor or otherwise not in breach of CTU's rights. 
+
+5.2. On the basis of the Free License, You may Use the Software Library only for evaluation, educational, research and other non-profit purposes, but You may not grant sublicenses to the Software Library, distribute the Software Library or make the Software Library available to third persons (whether separately or incorporated in or attached to the Developer Software, and whether in original or any modified form). 
+
+5.3. Non-profit purposes shall be regarded as activities which do not directly or indirectly generate profit. Indirect generation of profit means e.g. profiting on accompanying services, profiting through a subsidiary or securing delayed profit.
+
+
+6. COMMERCIAL LICENSE
+
+6.1. On the basis of the Commercial License, You may Use the Software Library for (i) non-profit purposes (art. 5.2), and (ii) in form of incorporating the Software Library in or attaching it to the Developer Software. 
+
+6.2. If not agreed otherwise, You may Use the Software Library in one or more Developer Software solutions without limitation by the number of Customers. You have the right to further distribute the Software Library to your Customers (and thus grant sublicenses to your Customers to Use the Software Library) within the Developer Software and in accordance with its function. If a volume or other limitation has been agreed, You shall ensure compliance with the arrangement. The limitation shall be secured also through technical means (e.g. measures preventing unauthorized dissemination of the Software Library), which You shall employ in the Developer Software. You may Use the Software Library also for servicing the Developer Software. 
+
+6.3. The Developer Software shall not compete with the Software Library. 
+
+6.4. You may not distribute the Software Library separately, without being incorporated in or attached to the Developer Software.
+
+
+7. SOFTWARE LIBRARY PRICE
+
+7.1. In case of Commercial License, You shall pay the Software Library Price to CTU. The Software Library Price is a one-time fee. No royalties are required. Payment of taxes, levies and other duties connected with sale/purchase of the Software Library (License) are sole responsibility of the respective parties. 
+
+7.2. The amount of the Software Library Price is quoted at the website through which You purchase the Software Library, or - as the case may be - it can be indicated on an invoice or otherwise communicated to You (especially if You do not purchase the Software Library on-line). If You pay an amount as a consideration for Use of the Software Library, it is a rebuttable presumption that the paid amount is a part of the Software Library Price. 
+
+7.3. The Commercial License shall commence only upon receipt of the Software Library Price by CTU. 
+
+7.4. If You are in delay with any payment in connection with the Software Library appertaining to CTU, the License shall be suspended for the delay.
+
+
+8. SERVICES
+
+8.1. If You prepay Services offered by CTU, You have a right to obtain the Services during the period of time, which You have prepaid, providing that You comply with technical and legal conditions stipulated by CTU for provision of the Services. CTU has no obligation to offer Services of any kind in connection with the Software Library (including bug-fixes). 
+
+8.2. If not agreed otherwise, in case of update and upgrade Services You have a right to all update or upgrade solutions developed by CTU and provided to Software Library licensees; You do not have a right to require specific problem solutions in terms of update or upgrade Services. 
+
+8.3. If You do not prepay Services or if CTU does not expressly guarantee provision of Services in connection with the Software Library, You do not have any right to provision of Services. If CTU provides Services in connection with the Software Library without having expressly obliged itself to do so, CTU may anytime quit providing the Services and does not guarantee anything as to the content of the Services. If CTU promises or declares provision of Services in connection with the Software Library without having expressly committed itself to provision of Services for a certain period of time, CTU may quit provision of Services anytime. 
+
+8.4. You may use update or upgrade Services and any software being a part of update or upgrade Services only on the condition that You Use properly licensed Software Library. Unless a specific rights arrangement is required in connection with the Services, the Services are subject to provisions of this Agreement to the extent as applicable.
+
+
+9. LIMITED WARRANTY; LIMITED LIABILITY
+
+9.1. The Software Library shall be - in any case - delivered "as is", i.e. without additional materials, manuals, interface or assistance services. 
+
+9.2. The Software Library with the Free License is freely downloadable from the Internet. If You intend to purchase the Commercial License, You shall Use the Software Library on the basis of the Free License for a reasonable time (at least 30 (thirty) days) first to check out the Software Library, its functions and properties and to find out possible imperfections You may consider as defects. CTU is not liable for any defects which were or could have been revealed on the basis of the non-profit (evaluation) Use of the Software Library. 
+
+9.3. Function, which the Software Library shall have, and way, in which the Software Library shall run, shall be assumed exclusively from CTU's express information furnished to You or to the public (if any). The limited warranty does not cover defects resulting from misuse or abuse of the Software Library, a virus, accident or other external event. The option on how to remove the defect appertains to CTU. CTU may remove the defect through repairing the Software Library, replacing the Software Library or refunding the Software Library Price; the replacement Software Library shall be warranted for the remainder of the original warranty period or for 30 (thirty) days from the day of receipt of the replacement Software Library, whichever is longer. 
+
+9.4. The limited warranty set forth in art 9.3 is the only warranty CTU gives You and rights set forth in art. 9.3 are your exclusive remedy for the case of breach of the warranty. Except what expressly provided in this Agreement, THE SOFTWARE LIBRARY IS PROVIDED TO YOU "AS IS" AND CTU DISCLAIMS ANY WARRANTY, WHETHER EXPRESS OR IMPLIED, AS WELL AS ANY WARRANTY OF MERCHANTABILITY OR FITNESS OF THE SOFTWARE LIBRARY FOR A PARTICULAR PURPOSE. Information on your motives or intentions in connection with the Software Library provided to CTU does not give rise to any warranty claim. CTU does not warrant any specific results or achievements of the Software Library. CTU does not warrant or promise anything in relation to Software Library acquired free of charge. 
+
+9.5. CTU's aggregate liability arising from or relating to Use of the Software Library by You (including your sublicensees and all persons accessing the Software Library on the basis of the License granted to You, and including any possible personal injury claims) shall not exceed the aggregate Software Library Price You have paid to CTU. CTU DISCLAIMS ANY HIGHER LIABILITY AND ALL LIABILITY FOR SPECIAL, INCIDENTAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, EVEN IF ADVISED OF POSSIBILITY OF THAT LIABILITY. You shall take all reasonable measures to prevent damages; if You fail to do so, CTU is not obliged to recover damages, which could have been avoided. Accepting this Agreement You expressly accept all these disclaimers. 
+
+9.6. Links to third persons' websites may be included in the Software Library. These links are provided only for your convenience and CTU does not assume any responsibility for the websites of third persons and their content. 
+
+9.7. You shall comply with all legal and other official measures relating to Use, distribution and disposition of the Software Library. 
+
+9.8. If a judicial or extra-judicial claim is raised against CTU in connection with the Developer Software, You shall discharge CTU of that claim and indemnify CTU for any damages, loss or costs incurred in that connection. The same holds true for developers of the Software Library and CTU's directors, employees, affiliates and partners.
+
+
+10. TERMINATION OF THE AGREEMENT
+
+10.1. You may terminate this Agreement anytime upon delivery of a written notice to CTU. 
+
+10.2. CTU may terminate this Agreement upon delivery of a written notice to You, if You breach (i) any obligation according to this Agreement and do not cure within a time given by CTU, not shorter than 14 (fourteen) days, or (ii) a key obligation according to this Agreement; obligations pursuant to art. 4.3, 5.2, 6.3 and 6.4 are always regarded as key obligations. 
+
+10.3. Upon termination of this Agreement (and subject to art. 10.4), You shall immediately cease Using the Software Library anyhow (including all commercial components of the Software Library, such as its commercial name) and erase or otherwise dispose of the Software Library, all its components and copies. 
+
+10.4. Sublicensees who have been granted sublicenses on the basis of your License before termination of this Agreement may continue Use the Software Library, providing that the sublicense is not granted in conflict with this License, and You may keep and reasonably Use one copy of the Software Library for the purposes of maintenance of the Developer Software after termination of this Agreement. 
+
+10.5. Any right to be refunded, indemnified or compensated from CTU in connection with termination of this Agreement shall be claimed exclusively within art. 9. No other claims for refunding or damages may be invoked. 
+
+10.6. Provisions, whose purpose is to regulate rights and obligations of the parties even after termination of this Agreement (such as art. 9.5, 10.4 and 10.5), shall survive termination of this Agreement.
+
+
+11. GENERAL AND FINAL PROVISIONS 
+
+11.1. This Agreement is the entire agreement and license between You and CTU in relation to the Software Library and it supersedes all prior oral or written proposals, communications, and representations. This Agreement may be amended only in writing on the basis of understanding of both parties. Amendments, supplements and additions to this Agreement as well as special arrangements of right and obligations of the parties (e.g. art. 11.2) are integral part of this Agreement. If CTU does not expressly declare otherwise, no person (especially a distributor or a sales person) is authorized to act on its behalf in the subject matter of this Agreement. 
+
+11.2. If this Agreement assumes a special arrangement of rights and obligations (e.g. as to the number of Customers), such arrangement may result also from CTU's product offer accepted by You or CTU's information provided with the pre-purchase Software Library specification. 
+
+11.3. Upon CTU's request, You shall, within 14 (fourteen) days from the request, document the circumstances relevant for performance of this Agreement, especially that You use the Software Library in accordance with this Agreement (such as the manner and extent of use). If the documentation is not sufficient, You shall, at CTU's discretion, supplement the documentation or enable on-site control of use of the Software Library. This right may be reasonably exercised even after termination of this Agreement (art. 10.4). 
+
+11.4. You shall comply with CTU's and third persons' trademark rights represented in connection with the Software Library. 
+
+11.5. Notices according to this Agreement shall be served on the other party at the address given in the heading of this Agreement or another address communicated in writing to the other party. Unless this Agreement expressly requires a notice in writing, notice can be given via e-mail message (which must not be electronically signed) or fax message. If served by post, notice shall be regarded as delivered, if (i) the addressee refuses to take over the notice, (ii) if the addressee does not pick up the notice within 5 (five) days from its deposition with the post office, or (iii) if the addressee does not reside at delivery address or the delivery address does not exist. 
+
+11.6. This Agreement shall be governed by the law of the Czech Republic. The venue for disputes arising from or in connection with this Agreement shall be that of CTU's seat. 
+
+11.7. Should any provision of this Agreement be or become invalid, ineffective or unenforceable, other provisions of this Agreement remain valid, effective and enforceable. Should any provision of this Agreement be or become partially invalid, ineffective or unenforceable, the rest of the provision remains valid, effective and enforceable. The parties undertake, in case of need, to replace the invalid, ineffective or unenforceable provision by a valid, effective and enforceable one, which will be as close as possible to the replaced provision.

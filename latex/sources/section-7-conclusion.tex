@@ -1,0 +1,17 @@
+
+%-------------------------------------------------------------------------
+\section{CONCLUSION}
+\label{section conclusion}
+
+In this paper, we introduce a parallel graph cut approach named JF-Cut to handle large data sets which has two main advantages:
+
+\begin{enumerate}
+\item improving the performance of graph cut for large images and videos using a GPU-based graph cut scheme based on jump flooding, heuristic push /relabel and convergence detection;
+\item providing users an interactive graph cut based data segmentation interface that allows for intuitive data selection, interaction and segmentation for large data sets.
+\end{enumerate}
+
+We use a variety of data sets (both a benchmark and different large data sets) to evaluate the performance of our approach.
+The results show that our method achieves a maximum 40-fold (139-fold) speedup over conventional GPU- (CPU-) based approaches and can be effectively used in different scenarios.
+The source code of JF-Cut will be soon available at https://github.com/15pengyi/JF-Cut.
+
+Our future work includes extending our approach to support unstructured data, optimizing the codes and making an independent library for end users to use.
